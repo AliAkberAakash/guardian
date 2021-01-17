@@ -3,6 +3,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:guardian/ui/features/google_map/map_screen.dart';
 import 'package:guardian/ui/features/home/home_page.dart';
+import 'package:guardian/utils/my_colors.dart';
 
 import 'navigation_container_controller.dart';
 
@@ -24,7 +25,7 @@ class _NavigationContainerState extends State<NavigationContainer> {
     var wp = MediaQuery.of(context).size.width;
 
     return Container(
-      color:  Colors.blue,
+      color:  primary,
       child: Scaffold(
         backgroundColor: Colors.transparent,
         body: Obx(() => _getBody()),
@@ -76,7 +77,7 @@ class _NavigationContainerState extends State<NavigationContainer> {
   /// Returns color of the selected item
   Color _getItemColor(int index){
     return _controller.selectedIndex.value == index ?
-    Colors.white :
+    accent :
     Colors.white;
   }
 

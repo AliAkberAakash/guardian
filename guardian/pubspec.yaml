@@ -11,8 +11,12 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  firebase_auth: ^0.14.0+5
-  google_sign_in: ^4.4.4
+
+  cupertino_icons: ^0.1.3
+  firebase_auth:
+  google_sign_in:
+  font_awesome_flutter:
+  google_fonts:
 
   # Dio for http connection
   dio: ^3.0.10
@@ -38,4 +42,4 @@ flutter:
 
   uses-material-design: true
   assets:
-    -assets/
+    - assets/

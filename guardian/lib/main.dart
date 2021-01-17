@@ -1,13 +1,13 @@
-import 'package:flutter/widgets.dart'; //use this
 import 'package:flutter/material.dart';
-import 'di/dependency_injection.dart';
-import 'ui/features/home/home_page.dart';
-import 'utils/my_colors.dart';
+import 'package:guardian/ui/features/login/login.dart';
+import 'package:guardian/ui/features/welcome/welcome.dart';
 
-void main() {
-  setup();
-  runApp(MyApp());
-}
+void main() => runApp(
+    MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: LoginPage(),
+    )
+);
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
@@ -15,16 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Hello World',
-      theme: ThemeData(
-        primaryColor: primary,
-        primaryColorDark: primary_dark,
-        accentColor: accent,
-
-        // Define the default font family.
-        fontFamily: 'Georgia',
-
-      ),
-      home: HomePage(),
+      home: LoginPage(),
     );
   }
 }

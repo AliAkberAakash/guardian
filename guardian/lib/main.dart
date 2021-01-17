@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:guardian/ui/features/login/login.dart';
-//import 'package:guardian/ui/features/welcome/welcome.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 
 void main() => runApp(
     MaterialApp(
@@ -18,4 +18,9 @@ class MyApp extends StatelessWidget {
       home: LoginPage(),
     );
   }
+}
+
+class _MyAppState extends State<MyApp> {
+
+
 }

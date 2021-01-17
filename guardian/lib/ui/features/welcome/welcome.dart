@@ -1,8 +1,18 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 
-class LoginScreen extends StatelessWidget {
+class LoginScreen extends StatefulWidget {
+  @override
+  _LoginScreenState createState() => _LoginScreenState();
+}
+
+class _LoginScreenState extends State<LoginScreen> {
+  GoogleSignIn _googleSignIn = GoogleSignIn(
+    scopes: ['email', 'https://www.googleapis.com/auth/contacts.readonly',
+    ],
+  );
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -116,7 +126,9 @@ class LoginScreen extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
-                  Image(image: AssetImage('assets/google_logo.png')),
+                  GestureDetector(
+                      onTap: (){ _googleSignIn.signIn();},
+                      child: Image (image: AssetImage('assets/google_logo.png'))),
                 ],
               ),
             ),
@@ -158,3 +170,4 @@ class CustomTextField extends StatelessWidget {
     );
   }
 }
+

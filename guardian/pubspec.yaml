@@ -32,6 +32,8 @@ dependencies:
   flutter_svg: ^0.19.1
   # google fonts
   google_fonts: ^1.1.1
+  # twillio
+  twilio_flutter: ^0.0.5
 
 dev_dependencies:
   flutter_test:

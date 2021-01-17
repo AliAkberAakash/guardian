@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:guardian/ui/features/sos_page/twillio_controller.dart';
 import 'package:guardian/utils/my_colors.dart';
 
 class SOSPage extends StatelessWidget {
+
+  final _controller = TwillioController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -66,7 +70,9 @@ class SOSPage extends StatelessWidget {
                   ),
                 ),
                 color: accent,
-                onPressed: (){},
+                onPressed: (){
+                  _controller.sendSms();
+                },
               ),
             ),
           ],

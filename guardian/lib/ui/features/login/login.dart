@@ -21,7 +21,7 @@ class LoginPage extends StatelessWidget {
               Text(
                 'Guardian',
                 style: GoogleFonts.montserratAlternates(
-                    color: Colors.deepPurple,
+                    color: Colors.primary_dark,
                     fontSize: 75,
                     fontWeight: FontWeight.w500),
               ),

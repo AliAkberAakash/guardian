@@ -13,11 +13,9 @@ dependencies:
     sdk: flutter
 
   cupertino_icons: ^0.1.3
-  firebase_auth:
-  google_sign_in:
-  font_awesome_flutter:
-  google_fonts:
-
+  firebase_auth: ^0.20.0+1
+  google_sign_in: ^4.5.9
+  font_awesome_flutter: ^8.11.0
   # Dio for http connection
   dio: ^3.0.10
   # Data connection checker
@@ -30,10 +28,21 @@ dependencies:
   get_it: ^5.0.1
   # Shared Preferences
   shared_preferences: ^0.5.12+2
+  # Google Maps
+  google_maps_flutter: ^1.1.1
+  # Getx
+  get: ^3.24.0
+  # SVG Picture
+  flutter_svg: ^0.19.1
+  # google fonts
+  google_fonts: ^1.1.1
+  # twillio
+  twilio_flutter: ^0.0.5
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
 
   # Mock Tests
   mockito: ^4.1.0
@@ -41,5 +50,8 @@ dev_dependencies:
 flutter:
 
   uses-material-design: true
+
   assets:
     - assets/
+    - assets/images/
+

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:guardian/ui/features/navigation_container/navigation_container.dart';
 import 'di/dependency_injection.dart';
 import 'ui/features/home/home_page.dart';
 import 'utils/my_colors.dart';
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
         fontFamily: 'Georgia',
 
       ),
-      home: HomePage(),
+      home: NavigationContainer(),
     );
   }
 }

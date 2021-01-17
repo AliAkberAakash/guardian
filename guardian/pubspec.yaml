@@ -26,10 +26,15 @@ dependencies:
   shared_preferences: ^0.5.12+2
   # Google Maps
   google_maps_flutter: ^1.1.1
+  # Getx
+  get: ^3.24.0
+  # SVG Picture
+  flutter_svg: ^0.19.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
 
   # Mock Tests
   mockito: ^4.1.0
@@ -37,3 +42,6 @@ dev_dependencies:
 flutter:
 
   uses-material-design: true
+
+  assets:
+    - assets/images/

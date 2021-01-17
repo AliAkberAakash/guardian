@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:guardian/ui/features/sign-up/signUp.dart';
+import 'package:guardian/ui/features/welcome/welcome.dart';
+import 'package:guardian/utils/my_colors.dart';
 
 class LoginPage extends StatelessWidget {
   @override
+
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
@@ -21,7 +26,7 @@ class LoginPage extends StatelessWidget {
               Text(
                 'Guardian',
                 style: GoogleFonts.montserratAlternates(
-                    color: Colors.primary_dark,
+                    color: primary,
                     fontSize: 75,
                     fontWeight: FontWeight.w500),
               ),
@@ -42,7 +47,7 @@ class LoginPage extends StatelessWidget {
                   minWidth: MediaQuery.of(context).size.width,
                   height: 55,
                   child: RaisedButton(
-                    onPressed: () {},
+                    onPressed: () {Get.to(LoginScreen());},
                     color: Colors.deepPurple[100],
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(25)),
@@ -60,7 +65,7 @@ class LoginPage extends StatelessWidget {
                   minWidth: MediaQuery.of(context).size.width,
                   height: 55,
                   child: RaisedButton(
-                    onPressed: () {},
+                    onPressed: () {Get.to(signPage());},
                     color: Colors.deepPurple[100],
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(25)),
@@ -76,3 +81,4 @@ class LoginPage extends StatelessWidget {
     );
   }
 }
+

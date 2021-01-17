@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "390948206346",
+    "project_id": "guardian-login-28610",
+    "storage_bucket": "guardian-login-28610.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:390948206346:android:48be20ede40b8b7c04acf3",
+        "android_client_info": {
+          "package_name": "com.rosehack.guardian"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "390948206346-78dil5lkq6hasdpbqkpuiu0c7329d78o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCni7VgdWF2mrXglyFUnvcspr4chBqibcY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "390948206346-78dil5lkq6hasdpbqkpuiu0c7329d78o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

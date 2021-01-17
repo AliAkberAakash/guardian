@@ -30,6 +30,8 @@ dependencies:
   get: ^3.24.0
   # SVG Picture
   flutter_svg: ^0.19.1
+  # google fonts
+  google_fonts: ^1.1.1
 
 dev_dependencies:
   flutter_test:

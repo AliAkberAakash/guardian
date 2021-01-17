@@ -3,6 +3,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:guardian/ui/features/google_map/map_screen.dart';
 import 'package:guardian/ui/features/home/home_page.dart';
+import 'package:guardian/ui/features/sos_page/sos_page.dart';
 import 'package:guardian/utils/my_colors.dart';
 
 import 'navigation_container_controller.dart';
@@ -96,7 +97,7 @@ class _NavigationContainerState extends State<NavigationContainer> {
   Widget _getBody(){
     switch(_controller.selectedIndex.value){
       case 0: return HomePage();
-      case 1: return MapScreen();
+      case 1: return SOSPage();
       case 2: return MapScreen();
       case 3: return MapScreen();
       default : return Container();
